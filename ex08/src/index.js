@@ -13,12 +13,14 @@ function getUsers() {
 }
 function findUser(lastName, gender) {
     try {
-        let user = 
-    }catch(error) {
+        var user;
+        // var user = _.find(users,{'lastName':lastName,'gender':gender});
+        var iFundUser = `${user.firstName} ${user.lastName} is ${user.age}, ${user.gender}`;
+    } catch(error) {
         return `Cannot read property ${firstName} of undefined`;
     }
 }
 
 console.log(getUsers());
-findUser("Doe",female);
+findUser();
 module.exports = findUser;
